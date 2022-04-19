@@ -76,7 +76,7 @@ export class SensorService {
   }
 
   list(sensor: SensorRequest): Observable<SensorRequest> {
-    const urlList = `${this.baseUrl}/${sensor.id}`
+    const urlList = `${this.baseUrl}/${sensor.id}` 
     return this.http.get<SensorRequest>(urlList).pipe(
       map((obj) => obj),
       catchError(error => this.errorHandler(error))
