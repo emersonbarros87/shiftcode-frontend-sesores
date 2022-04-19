@@ -1,0 +1,35 @@
+.nav-container {
+  background-color: #1A1A1A;
+  width: 100%;
+}
+
+.top {
+  width: 940px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 25px 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+#brand {
+  width: 180px;
+}
+
+li {
+  font-size: 1rem;
+  display: inline;
+  margin: 0 0 0 50px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+nav a:hover {
+  color: #ff0000;
+}

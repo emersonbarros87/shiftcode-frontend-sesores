@@ -1,0 +1,46 @@
+<div class="list-container">
+  <div class="List-content">
+    <mat-card>
+      <mat-card-title>Informações</mat-card-title>
+
+      <form>
+
+        <mat-form-field >
+          <mat-label>Id</mat-label>
+          <input matInput [(ngModel)]="sensor.id" name="id" disabled/>
+        </mat-form-field>
+
+        <mat-form-field >
+          <mat-label>O ALERTA FOI EMITIDO?</mat-label>
+          <input matInput [(ngModel)]="sensor.alert" name="alert" disabled/>
+        </mat-form-field>
+
+        <mat-form-field >
+          <mat-label>endereço</mat-label>
+          <input matInput [(ngModel)]="sensor.address" name="address" disabled/>
+        </mat-form-field>
+  
+        <mat-form-field >
+          <mat-label>bairro</mat-label>
+          <input matInput [(ngModel)]="sensor.district" name="district" disabled/>
+        </mat-form-field>
+  
+        <mat-form-field >
+          <mat-label>cep</mat-label>
+          <input matInput [(ngModel)]="sensor.cep" type="number" name="cep" disabled/>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="volume" [value]="sensor.volume + '%'" name="volume" disabled/>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput  placeholder="data" [value]="sensor.date" name="date" disabled/>
+        </mat-form-field>
+      </form>
+
+      <button mat-raised-button (click)="back()">Voltar</button>
+    </mat-card>
+  
+  </div>
+</div>

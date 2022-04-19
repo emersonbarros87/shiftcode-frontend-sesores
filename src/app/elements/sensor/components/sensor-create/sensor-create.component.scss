@@ -1,0 +1,27 @@
+
+.container-card{
+  height: 500px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+.create-sensor {
+    margin: auto;
+    width: 30%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+button {
+  margin: 20px 15px 0px 0px;
+}
+
+#button-color {
+  background-color: #1a1a1a;
+  color: white;
+}

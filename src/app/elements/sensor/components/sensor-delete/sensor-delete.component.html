@@ -1,0 +1,26 @@
+<div class="delete-container">
+  <div class="delete-content">
+    <mat-card>
+      <mat-card-title>Excluir Dados</mat-card-title>
+      <form>
+        <mat-form-field>
+          <input
+            matInput placeholder="volume"
+            [value]="sensor.volume + '%'" name="volume" disabled
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput  placeholder="data"
+            [value]="sensor.date" name="date" disabled
+          />
+        </mat-form-field>
+      </form>
+      <button mat-raised-button (click)="deleteSensor()" color="warn">
+        Excluir
+      </button>
+      <button mat-raised-button (click)="cancel()">Cancelar</button>
+    </mat-card>
+    
+    
+  </div>
+</div>

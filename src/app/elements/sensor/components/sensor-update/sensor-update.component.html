@@ -1,0 +1,39 @@
+<div class="update-container">
+  <div class="update-content">
+    <mat-card>
+      <mat-card-title>Alterar Dados</mat-card-title>
+      <form>
+        <mat-form-field appearance="fill">
+          <mat-label>dd/mm/aaaa</mat-label>
+          <input matInput [matDatepicker]="picker" [(ngModel)]="sensor.date" name="date"/>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="volume(%)" [(ngModel)]="sensor.volume" name="volume"/>
+        </mat-form-field>
+        
+      <div>
+        <div class="mb-2">
+          <label>Clima Tempo</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked>
+          <label class="form-check-label" for="flexRadioCheckedDisabled">
+            O clima pode mudar.
+          </label>
+        </div>
+      </div>
+      </form>
+
+      <button mat-raised-button (click)="updateSensor()" id="button-color">
+        Atualizar
+      </button>
+      <button mat-raised-button (click)="cancel()">Cancelar</button>
+    </mat-card>
+    
+    
+    
+  </div>
+</div>

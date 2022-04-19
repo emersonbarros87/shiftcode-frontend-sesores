@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+:root {
+    --input-linear: linear-gradient(120deg, #1a1a1a, red);
+    --input-linear: linear-gradient(120deg, #1a1a1a, red);
+    --button-linear: linear-gradient(120deg, rgb(83, 0, 0), red, rgb(83, 0, 0));
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.yellow {
+    background-color: #ffff00;
+    color:#1a1a1a;
+    font-weight: 500;
+}
+
+.red {
+    background-color: #ff0000 !important;;
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.mat-snack-bar-container {
+    margin: 150px auto !important;
+}
+
+.msgDate {
+    background-color: #fff !important;
+    color: #ff0000 !important;
+  }
+  
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

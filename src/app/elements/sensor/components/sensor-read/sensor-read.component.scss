@@ -1,0 +1,47 @@
+.read-container {
+  width: 940px;
+  margin: auto;
+  height: 100vh;
+}
+
+.read-content {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  width: 100%;
+}
+
+.edit {
+  margin-right: 10px;
+}
+.edit > i {
+  color: #535353;
+}
+
+.delete > i {
+  color:#535353;
+}
+
+button {
+  color: white;
+  background-color: #30b309;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.status-bold {
+  font-weight: 600;
+}
+
+#radio-button {
+  border-radius: 100px !important;
+  background-color: none;
+  color: #ff0000 !important;
+  width: 10px !important;
+  font-size: 1.2rem;
+  font-weight: 600;
+}

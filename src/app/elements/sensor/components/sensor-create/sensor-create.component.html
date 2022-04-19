@@ -1,0 +1,39 @@
+<div class="container-card">
+    <div class="create-sensor">
+      <mat-card-title>Dados Sensores</mat-card-title>
+    <form>
+
+      <mat-form-field >
+        <mat-label>endereço</mat-label>
+        <input matInput [(ngModel)]="sensor.address" name="address"/>
+      </mat-form-field>
+      
+      <mat-form-field >
+        <mat-label>bairro</mat-label>
+        <input matInput [(ngModel)]="sensor.district" name="district"/>
+      </mat-form-field>
+
+      <mat-form-field >
+        <mat-label>cep</mat-label>
+        <input matInput [(ngModel)]="sensor.cep" type="number" name="cep"/>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>dd/mm/aaaa</mat-label>
+        <input matInput [matDatepicker]="picker" [(ngModel)]="sensor.date" name="date"/>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      
+      <mat-form-field >
+        <mat-label>volume(%)</mat-label>
+        <input matInput [(ngModel)]="sensor.volume" name="volume"/>
+      </mat-form-field>
+
+    </form>
+    <button mat-raised-button (click)="save()" id="button-color" >
+      Salvar
+    </button>
+    <button mat-raised-button (click)="cancel()">Cancelar</button>
+    </div>
+</div>
