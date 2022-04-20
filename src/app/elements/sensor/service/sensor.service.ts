@@ -13,7 +13,7 @@ export class SensorService {
     routeUrl: ''
   })
 
-  baseUrl = 'https://dashboard.heroku.com/apps/shiftcode-backend-sensors'
+  baseUrl = 'https://shiftcode-backend-sensor.herokuapp.com/'
   constructor(
     private snackBar: MatSnackBar,
     private http: HttpClient,
