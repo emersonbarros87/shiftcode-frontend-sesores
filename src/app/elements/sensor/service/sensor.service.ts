@@ -13,7 +13,7 @@ export class SensorService {
     routeUrl: ''
   })
 
-  baseUrl = 'http://localhost:8080/sensores'
+  baseUrl = 'https://dashboard.heroku.com/apps/shiftcode-backend-sensors'
   constructor(
     private snackBar: MatSnackBar,
     private http: HttpClient,
@@ -76,7 +76,7 @@ export class SensorService {
   }
 
   list(sensor: SensorRequest): Observable<SensorRequest> {
-    const urlList = `${this.baseUrl}/${sensor.id}` 
+    const urlList = `${this.baseUrl}/${sensor.id}`
     return this.http.get<SensorRequest>(urlList).pipe(
       map((obj) => obj),
       catchError(error => this.errorHandler(error))
